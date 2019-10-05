@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>HTML5 Audio Player</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">   
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="audio-image">
+                <img src="" class="cover">
+            </div>
+            <div id="audio-player">
+                <div id="audio-info">
+                    <span class="artist"></span> - <span class="title"></span>
+                </div>
+                <input id="volume" type="range" min="0" max="100" value="40">
+                <br>
+                <div id="buttons">
+                    <span>
+                        <button id="prev"></button>
+                        <button id="play"></button>
+                        <button id="pause"></button>
+                        <button id="stop"></button>
+                        <button id="next"></button>
+                    </span>
+                </div>
+                <div class="clearfix"></div>
+                <div id="tracker">
+                    <div id="progress-bar">
+                        <span id="progress"></span>
+                    </div>
+                    <span id="duration">0:00</span>
+                </div>
+                <div class="clearfix"></div>
+                <ul id="playlist" class="hidden">
+                    <li song = "ABBA - Thank You For the Music.mp3" cover = "abba.jpg" artist = "ABBA">Thank you for the music</li>
+                    <li song = "Abba - The winner takes it all.mp3" cover = "abba.jpg" artist = "ABBA">The winner takes it all</li>
+                    <li song = "A-Ha - Hunting High And Low.mp3" cover = "Aha.jpg" artist = "A-ha">Hunting High And Low</li>
+                    <li song = "Air Supply - Chances.mp3" cover = "AirSupply.jpg" artist = "Air Supply">Chances</li>
+                    <li song = "Air Supply - Lost in Love.mp3" cover = "AirSupply.jpg" artist = "Air Supply">Lost in Love</li>
+                    <li song = "Alicia Keys & Jay Z - Empire State Of Mind.mp3" cover = "AliciaKeys.jpg" artist = "Alicia Keys & Jay Z">Empire State Of Mind</li>
+                    <li song = "Alkinoos Ioannidis - O Proskinitis.mp3" cover = "ioannidis.jpg" artist = "Alkinoos Ioannidis">O Proskinitis</li>
+                    <li song = "Andrea Bocelli  Sarah Brightman - Time To Say Goodbye.mp3" cover = "bocceli.jpg" artist = "Andrea Bocelli  Sarah Brightman">Time To Say Goodbye</li>
+                    <li song = "Ariana Grande - Santa Tell Me.m4a" cover = "cover1.jpg" artist = "Ariana Grande">Santa Tell Me</li>
+                    <li song = "Bee Gees - More Than A Woman.mp3" cover = "BeeGees.jpg" artist = "Bee Gees">More Than A Woman</li>
+                    <li song = "Black Sabbath - A National Acrobat.mp3" cover = "BlackSabbath.jpg" artist = "Black Sabbath">A National Acrobat</li>
+                    <li song = "Black Sabbath - Fluff.mp3" cover = "BlackSabbath.jpg" artist = "Black Sabbath">Fluff</li>
+                    <li song = "Black Sabbath - Killing Yourself To Live.mp3" cover = "BlackSabbath.jpg" artist = "Black Sabbath">Killing Yourself To Live</li>
+                    <li song = "Black Sabbath - Sabbath, Bloody Sabbath.mp3" cover = "BlackSabbath.jpg" artist = "Black Sabbath">Sabbath, Bloody Sabbath</li>
+                    <li song = "Black Sabbath - Snowblind.mp3" cover = "BlackSabbath.jpg" artist = "Black Sabbath">Snowblind</li>
+                    <li song = "Cornfield Chase - Hans Zimmer.mp3" cover = "cover1.jpg" artist = "Hans Zimmer">Cornfield Chase</li>
+                    <li song = "den mas sigxoro.mp3" cover = "tsaligopoulou.jpg" artist = "Ελένη Τσαλιγοπούλου">ΔΕΝ ΜΑΣ ΣΥΓΧΩΡΩ</li>
+                    <li song = "thelo na allakseis to isitirio.mp3" cover = "tsaligopoulou.jpg" artist = "Ελένη Τσαλιγοπούλου">ΘΕΛΩ ΝΑ ΑΛΛΑΞΕΙΣ ΤΟ ΕΙΣΙΤΗΡΙΟ</li>
+                    <li song = "MoiraMouEgines.mp3" cover = "cover1.jpg" artist = "Α. Μπάμπαλη">Μοίρα μου έγινες</li>
+                    <li song = "chiliesSiopes.mp3" cover = "tsaligopoulou.jpg" artist = "Ελένη Τσαλιγοπούλου">ΧΙΛΙΕΣ ΣΙΩΠΕΣ</li>
+                    <li song = "Bruce Springsteen - Racing In The Street.mp3" cover = "Springsteen.jpg" artist = "Bruce Springsteen">Racing In The Street</li>
+                    <li song = "Burt Bacharach - Casino Royale.mp3" cover = "cover1.jpg" artist = "Burt Bacharach">Casino Royale</li>
+                    <li song = "Carole King - It's Too Late.mp3" cover = "cover1.jpg" artist = "Carole King">It's Too Late</li>
+                    <li song = "Chicago - 25 Or 6 To 4.mp3" cover = "cover1.jpg" artist = "Chicago">25 Or 6 To 4</li>
+                    <li song = "Chicago - If you leave me now.mp3" cover = "cover1.jpg" artist = "Chicago">If you leave me now</li>
+                    <li song = "Cliff Martinez - A Real Hero.mp3" cover = "cover1.jpg" artist = "Cliff Martinez">A Real Hero</li>
+                    <li song = "Commodores,The - Three Times A Lady.mp3" cover = "commodores.jpg" artist = "Commodores">Three Times A Lady</li>
+                    <li song = "David Bowie - Space Oddity.mp3" cover = "DavidBowie.jpg" artist = "David Bowie">Space Oddity</li>
+                    <li song = "David Bowie - Where Are We Now.mp3" cover = "DavidBowie.jpg" artist = "David Bowie">Where Are We Now</li>
+                    <li song = "Daz Sampson - Teenage Life.mp3" cover = "DazSimpson.jpg" artist = "Daz Sampson">Teenage Life</li>
+                    <li song = "Dionne Warwick - Walk On By.mp3" cover = "dionneWarwick.jpg" artist = "Dionne Warwick">Walk On By</li>
+                    <li song = "Dire Straits - Your Latest Trick.mp3" cover = "DireStraits.jpg" artist = "Dire Straits">Your Latest Trick</li>
+                    <li song = "Eleftheria Arvanitaki - Me To Idio Mako.mp3" cover = "arvanitaki.jpg" artist = "Eleftheria Arvanitaki">Me To Idio Mako</li>
+                    <li song = "Elton John - Tiny Dancer.mp3" cover = "DireStraits.jpg" artist = "Elton John">Tiny Dancer</li>
+                    <li song = "Fivos Delivorias - ekini.mp3" cover = "delivorias.jpg" artist = "Fivos Delivorias">ekini</li>
+                    <li song = "Frankie Valli - Begging.mp3" cover = "frankieVallie.jpg" artist = "Frankie Valli">Begging</li>
+                    <li song = "Guns N' Roses - November Rain.mp3" cover = "DireStraits.jpg" artist = "Guns N' Roses">November Rain</li>
+                    <li song = "Hans Zimmer - Mountains.mp3" cover = "DireStraits.jpg" artist = "Hans Zimmer">Mountains</li>
+                    <li song = "Jose Carreras - Sarah Brightman - Amigos Para Siempre.mp3" cover = "DireStraits.jpg" artist = "Jose Carreras - Sarah Brightman">Amigos Para Siempre</li>
+                    <li song = "Journey - Don't Stop Believin'.mp3" cover = "journey.jpg" artist = "Journey">Don't Stop Believin'</li>
+                    <li song = "Kavinsky - Night Call.mp3" cover = "kavinsky.jpg" artist = "Kavinsky">Night Call</li>
+                    <li song = "Kenny Rogers - Lady.mp3" cover = "KennyRogers.jpg" artist = "Kenny Rogers">Lady</li>
+                    <li song = "Kyle Eastwood and Michael Stevens - Gran Torino.mp3" cover = "DireStraits.jpg" artist = "Kyle Eastwood and Michael Stevens">Gran Torino</li>
+                    <li song = "Lady Starlight - Scorpions.mp3" cover = "Scorpions.jpg" artist = "Scorpions">Lady Starlight</li>
+                    <li song = "London Philharmonic Orchestra - Air On A G String.mp3" cover = "lfo.jpg" artist = "London Philharmonic Orchestra">Air On A G String</li>
+                    <li song = "Lynyrd Skynyrd - Free Bird.mp3" cover = "lynardSkynard.jpg" artist = "Lynyrd Skynyrd">Free Bird</li>
+                    <li song = "Manfred Mann - Father Of Dayfather Of Night.mp3" cover = "mannfredMann.jpg" artist = "Manfred Mann">Father Of Dayfather Of Night</li>
+                    <li song = "Manfred Mann`s Earth Band - Spirits In The Night.mp3" cover = "mannfredMann.jpg" artist = "Manfred Mann`s Earth Band">Spirits In The Night</li>
+                    <li song = "Manfred Mann's Earth Band - Blinded By The Light.mp3" cover = "mannfredMann.jpg" artist = "Manfred Mann's Earth Band">Blinded By The Light</li>
+                    <li song = "Manfred Mann's Earth Band - Questions.mp3" cover = "mannfredMann.jpg" artist = "Manfred Mann's Earth Band">Questions</li>
+                    <li song = "Manfred Mann's Earth Band - Visionary Mountains.mp3" cover = "mannfredMann.jpg" artist = "Manfred Mann's Earth Band">Visionary Mountains</li>
+                    <li song = "Mike Post - Theme From Hill Street Blues.mp3" cover = "Scorpions.jpg" artist = "Mike Post">Theme From Hill Street Blues</li>
+                    <li song = "Orfeas Peridis - ta tragoudia mou t' amerikanika.mp3" cover = "peridis.jpg" artist = "Orfeas Peridis">ta tragoudia mou t' amerikanika</li>
+                    <li song = "Orfeas Peridis - Zilevi I Nihta.mp3" cover = "peridis.jpg" artist = "Orfeas Peridis">Zilevi I Nihta</li>
+                    <li song = "orfeas-peridis-gia-pou-to-vales-kardia-mou.mp3" cover = "peridis.jpg" artist = "Orfeas Peridis">gia pou to vales kardia mou</li>
+                    <li song = "Paul weller - You do something to me.mp3" cover = "weller.jpg" artist = "Paul weller">You do something to me</li>
+                    <li song = "Queen - Under Pressure.m4a" cover = "Queen.jpg" artist = "Queen">Under Pressure</li>
+                    <li song = "Ralph McTell - Wind In The Willows.mp3" cover = "ralph_mctell.jpg" artist = "Ralph McTell">Wind In The Willows</li>
+                    <li song = "Scorpions - Drifting Sun.mp3" cover = "Scorpions.jpg" artist = "Scorpions">Drifting Sun</li>
+                    <li song = "Scorpions - Fly People Fly.mp3" cover = "Scorpions.jpg" artist = "Scorpions">Fly People Fly</li>
+                    <li song = "Scorpions - They Need A Million.mp3" cover = "Scorpions.jpg" artist = "Scorpions">They Need A Million</li>
+                    <li song = "Scorpions - Top Of The Bill.mp3" cover = "Scorpions.jpg" artist = "Scorpions">Top Of The Bill</li>
+                    <li song = "Supertramp - Breakfast In America.mp3" cover = "supertramp.jpg" artist = "Supertramp">Breakfast In America</li>
+                    <li song = "Supertramp - Child Of Vision.mp3" cover = "supertramp.jpg" artist = "Supertramp">Child Of Vision</li>
+                    <li song = "Supertramp - Crime Of The Century.mp3" cover = "supertramp.jpng" artist = "Supertramp">Crime Of The Century</li>
+                    <li song = "Supertramp - Don't Leave Me Now.mp3" cover = "supertramp.jpg" artist = "Supertramp">Don't Leave Me Now</li>
+                    <li song = "Supertramp - Gone Hollywood.mp3" cover = "supertramp.jpg" artist = "Supertramp">Gone Hollywood</li>
+                    <li song = "The Beatles - Long and Winding Road.mp3" cover = "beatles.jpg" artist = "The Beatles">Long and Winding Road</li>
+                    <li song = "The Carpenters - Rainy Days And Mondays.mp3" cover = "weller.jpg" artist = "The Carpenters">Rainy Days And Mondays</li>
+                    <li song = "The Cranberries - Ode To My Family.mp3" cover = "crannberries.jpg" artist = "The Cranberries">Ode To My Family</li>
+                    <li song = "The Cranberries - Ridiculous Thoughts.mp3" cover = "crannberries.jpg" artist = "The Cranberries">Ridiculous Thoughts</li>
+                    <li song = "The Eagles - I Can't Tell You Why.mp3" cover = "eagles.jpg" artist = "The Eagles">I Can't Tell You Why</li>
+                    <li song = "The Isley Brothers - This Old Heart Of Mine.mp3" cover = "weller.jpg" artist = "The Isley Brothers">This Old Heart Of Mine</li>
+                    <li song = "U2 - Into The Heart.mp3" cover = "U2.jpg" artist = "U2">Into The Heart</li>
+                    <li song = "U2 - Party Girl.mp3" cover = "U2.jpg" artist = "U2">Party Girl</li>
+                    <li song = "U2 - Twilight.mp3" cover = "U2.jpg" artist = "U2">Twilight</li>
+                    <li song = "Warrant - Heaven.mp3" cover = "warrant.jpg" artist = "Warrant">Heaven</li>
+                    <li song = "Whitesnake - Ain't No Love In The Heart Of The City.mp3" cover = "whitesnake.jpg" artist = "Whitesnake">Ain't No Love In The Heart Of The City</li>
+                    <li song = "Billy Idol - Eyes Without A Face.mp3" cover = "BillyIdol.jpg" artist = "Billy Idol">Eyes Without A Face</li>
+ 
+
+
+                    </div>
+            </div>
+
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/main.js"></script>
+            </body>
+
+        </html>

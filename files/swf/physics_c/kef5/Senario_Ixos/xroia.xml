@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encode="UTF-8"?>
+
+<initialData>
+	<iData
+		f="300"
+	
+		fTextVisible="false"
+	/>
+			
+</initialData>
+
+
+
+<!-- (c) Σιτσανλής Ηλίας
+
+f="300"	Η Συχνότητα f1 είναι μεταξύ 0-1000 Hz
+fTextVisible="true"	Αν θα είναι ορατή η συχνότητα
+
+-->

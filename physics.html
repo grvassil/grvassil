@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Οι Φυσικές Επιστήμες στο 2ο Γυμνάσιο Αμαλιάδας</title>
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+        <nav class="teal lighten-2">
+            <div class="container-header">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo hide-on-small-and-down" style="font-size:0.8rem;width:100%;margin-left:60px;">Οι
+                        Φυσικες Επιστημες στο Γυμνασιο</a>
+                    <a href="#" data-activates="mobile-menu" class="button-collapse">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="index.html">Αρχικη</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <ul class="side-nav" id="mobile-menu">
+        <li>
+            <a href="index.html">Αρχικη</a>
+        </li>
+
+    </ul>
+
+
+    <!-- Slider -->
+    <section class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/bridge.jpg" alt="">
+                <div class="caption center-align">
+                    <h3 class="light teal-text">Φυσική</h3>
+                    <h5 class="light teal-text">Η μητερα των φυσικων επιστημων</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- Section: Lessons -->
+    <section class="section section-lessons grey lighten-3 center">
+        <div class="container">
+            <div class="row">
+                <a href="physics_a.html">
+                    <div class="col s12 m4">
+                        <div class="card-panel teal-text text-lighten-3">
+                            <i class="fas fa-cogs fa-5x"></i>
+                            <h4 class="flow-text">Φυσικη Α Γυμνασιου</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="physics_b.html">
+                    <div class="col s12 m4">
+                        <div class="card-panel teal-text text-lighten-1">
+                            <i class="fas fa-cogs fa-5x"></i>
+                            <h4 class="flow-text">Φυσικη Β Γυμνασιου</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="physics_c.html">
+                    <div class="col s12 m4">
+                        <div class="card-panel teal-text text-darken-3">
+                            <i class="fas fa-cogs fa-5x"></i>
+                            <h4 class="flow-text">Φυσικη Γ Γυμνασιου</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m8 l6">
+                    <h5 class="white-text">Πλοήγηση στην ιστοσελίδα</h5>
+                    <ul>
+                        <li>
+                            <a class="white-text" href="index.html">Αρχικη</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col s12 m4 l6">
+                    <h5 class="white-text">Σύνδεσμοι</h5>
+                    <ul>
+                        <li> <a target="_blank" class="white-text" href="http://2gym-amaliad.ilei.sch.gr">2ο Γυμνάσιο
+                                Αμαλιάδας</a></li>
+                        <li> <a target="_blank" class="white-text" href="http://dide.ilei.sch.gr">ΔΔΕ Ηλείας</a></li>
+                        <li> <a target="_blank" class="white-text" href="http://didefth.gr/new/">ΔΔΕ Φθιώτιδας</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Κατασκευή & Διαχείριση: Γρηγόρης Βασιλόπουλος, MSc
+                <a class="grey-text text-lighten-4 right" href="http://2gym-amaliad.ilei.sch.gr/" target="_blank">2ο
+                    Γυμνάσιο Αμαλιάδας</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Custom JS & jQuery here
+            $('.button-collapse').sideNav();
+            $('.slider').slider({
+                indicators: false,
+                height: 400,
+                transition: 500,
+                interval: 6000
+            });
+
+        });
+    </script>
+</body>
+
+</html>

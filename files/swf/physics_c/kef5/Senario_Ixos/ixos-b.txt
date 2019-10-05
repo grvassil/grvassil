@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encode="UTF-8"?>
+
+<initialData>
+	<iData
+		f="100"
+		fTextVisible="true"
+	/>
+			
+</initialData>
+
+
+
+<!-- (c) Σιτσανλής Ηλίας
+
+f="300"	Η Συχνότητα f είναι μεταξύ 0-20000 Hz
+
+-->

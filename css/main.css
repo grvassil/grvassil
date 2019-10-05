@@ -1,0 +1,17 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.container-header {
+  width: 95%;
+}
+
+.hidden {
+  display: none;
+}
